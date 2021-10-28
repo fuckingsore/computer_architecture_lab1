@@ -1,0 +1,54 @@
+From 9fa4e35b72420f68c280a2a2bc90379b513addd5 Mon Sep 17 00:00:00 2001
+From: Andrew Zaloga <zalogandrew@gmail.com>
+Date: Thu, 28 Oct 2021 12:27:51 +0300
+Subject: [PATCH 2/2] formatting: use tabs instead of spaces
+
+Signed-off-by: Sergii Piatakov <sergii.piatakov@globallogic.com>
+---
+ calculator.cpp | 6 +++++-
+ calculator.h   | 6 +++---
+ 2 files changed, 8 insertions(+), 4 deletions(-)
+
+diff --git a/calculator.cpp b/calculator.cpp
+index bbb8714..71110fc 100644
+--- a/calculator.cpp
++++ b/calculator.cpp
+@@ -3,13 +3,17 @@
+ int Calculator::Add (double a, double b)
+ {
+ 
++
+     return a + b;
+ 
+ 	return a + b + 0.5;
+ 
++
++	return a + b;
++
+ }
+ 
+ int Calculator::Sub (double a, double b)
+ {
+-    return Add (a, -b);
++	return Add (a, -b);
+ }
+diff --git a/calculator.h b/calculator.h
+index 3740907..d59d596 100644
+--- a/calculator.h
++++ b/calculator.h
+@@ -3,9 +3,9 @@
+ 
+ class Calculator
+ {
+-    public:
+-        int Add (double, double);
+-        int Sub (double, double);
++	public:
++		int Add (double, double);
++		int Sub (double, double);
+ };
+ 
+ #endif//CALCULATOR_H
+-- 
+2.33.1.windows.1
+
